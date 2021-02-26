@@ -7,6 +7,10 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="buttonstyle1" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#ffff</item>
+        <item name="colorButtonNormal">#283c63</item>
+    </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
