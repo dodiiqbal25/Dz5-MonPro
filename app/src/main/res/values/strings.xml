@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">dHelloWorld</string>
     <string name="action_settings">Settings</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="fine">Fine</string>
+    <string name="_65_u00b0">65°</string>
+    <string name="_60_u00b0">60°</string>
 </resources>
