@@ -14,76 +14,98 @@
             android:background="#dddddd">
 
         <TextView
-                android:text="Jum'at, 05 Maret 2021"
+                android:text="@string/kota"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/kota"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="185dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="265dp"
+                android:layout_marginTop="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="40dp"
+                android:layout_alignStart="@+id/imageView" />
+
+        <TextView
+                android:text="@string/tgl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="date"
                 android:ems="10"
-                android:id="@+id/editTextDate"
+                android:id="@+id/tgl"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginEnd="4dp"
-                android:layout_marginTop="33dp" />
+                android:layout_marginEnd="6dp"
+                android:layout_marginTop="42dp" />
 
         <TextView
-                android:text="90\u00B0"
+                android:text="@string/temp_max"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="38sp"
                 android:textStyle="bold"
-                android:id="@+id/text_temp_max"
+                android:id="@+id/tempMax"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="80dp"
+                android:layout_marginStart="49dp"
                 android:layout_alignParentTop="true"
-                android:layout_marginTop="160dp" />
+                android:layout_marginTop="158dp" />
 
         <TextView
-                android:text="78\u00B0"
+                android:text="@string/temp_min"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/text_temp_min"
+                android:id="@+id/tempMin"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="80dp"
+                android:layout_marginStart="49dp"
                 android:layout_alignParentTop="true"
-                android:layout_marginTop="220dp" />
+                android:layout_marginTop="219dp" />
 
         <TextView
-                android:text="Light Rain"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:text="@string/desc"
+                android:layout_width="91dp"
+                android:layout_height="27dp"
                 android:id="@+id/text_desc"
                 android:textSize="18sp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginEnd="54dp"
-                android:layout_marginTop="225dp" />
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="217dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="320dp" />
 
         <ImageView
-                android:layout_width="107dp"
-                android:layout_height="88dp"
-                app:srcCompat="@android:mipmap/sym_def_app_icon"
-                android:id="@+id/imageView"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="40dp"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="25dp" />
-
-        <ImageView
-                android:layout_width="123dp"
-                android:layout_height="93dp"
+                android:layout_width="wrap_content"
+                android:layout_height="81dp"
                 app:srcCompat="@drawable/cuaca"
-                android:id="@+id/imageView3"
+                android:id="@+id/image_desc"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="258dp"
+                android:layout_marginEnd="10dp"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="123dp" />
+                android:layout_marginBottom="49dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="120dp"
+                android:layout_alignParentTop="true" />
+
+        <ImageView
+                android:layout_width="27dp"
+                android:layout_height="34dp"
+                app:srcCompat="@drawable/gps"
+                android:id="@+id/imageView"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="14dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="31dp" />
 
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
 
+            android:id="@+id/RecyclerviewItem"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context=".MainActivity"

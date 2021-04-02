@@ -5,4 +5,9 @@
     <string name="fine">Fine</string>
     <string name="_65_u00b0">65°</string>
     <string name="_60_u00b0">60°</string>
+    <string name="kota">Purwakarta</string>
+    <string name="tgl">Jum\'at, 26 Maret 2021</string>
+    <string name="desc">Ligt Rain</string>
+    <string name="temp_max">90°</string>
+    <string name="temp_min">78°</string>
 </resources>

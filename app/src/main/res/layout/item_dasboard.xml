@@ -7,62 +7,77 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="wrap_content">
 
-<ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/cuaca"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="24dp"
-        android:id="@+id/itemPreview"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"
-        android:contentDescription="TODO" />
 
-<TextView
-        tools:text="Tomorrow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@+id/itemPreview"
-        android:id="@+id/itemName"
-        android:layout_marginStart="24dp"
-        app:layout_constraintStart_toEndOf="@+id/itemPreview"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/primary_text_light"/>
-
-<TextView
-        tools:text="Light Rain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/itemPrice"
-        android:layout_marginTop="4dp"
-        app:layout_constraintTop_toBottomOf="@+id/itemName"
-        app:layout_constraintStart_toStartOf="@+id/itemName"
-        android:textSize="12sp"/>
-
+    <ImageView
+            android:layout_width="77dp"
+            android:layout_height="78dp"
+            app:srcCompat="@drawable/cuaca"
+            android:id="@+id/icon"
+            android:contentDescription="TODO"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="16dp" />
 
     <TextView
-            android:text="@string/_65_u00b0"
-            android:textSize="26sp"
+            tools:text="@string/tgl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:id="@+id/day"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/primary_text_light"
+            tools:ignore="MissingConstraints,TextViewEdits"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/icon"
+            android:layout_marginStart="20dp" />
+
+    <TextView
+            tools:text="@string/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/desc"
+            android:textSize="12sp"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/day"
+            app:layout_constraintVertical_bias="0.538"
+            app:layout_constraintStart_toEndOf="@+id/icon"
+            android:layout_marginStart="24dp" />
+
+    <TextView
+            tools:text="@string/temp_max"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView"
-            tools:layout_editor_absoluteY="23dp"
-            tools:layout_editor_absoluteX="320dp"
-            tools:ignore="MissingConstraints" />
+            android:id="@+id/temp"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="44dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/day"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:layout_marginTop="16dp" />
 
     <TextView
-            android:text="@string/_60_u00b0"
-            android:textSize="18sp"
+            tools:text="@string/temp_min"
+            android:textSize="16sp"
             android:textStyle="normal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            tools:layout_editor_absoluteY="58dp"
-            tools:layout_editor_absoluteX="320dp"
-            tools:ignore="MissingConstraints" />
+            android:id="@+id/temp_range"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="52dp"
+            app:layout_constraintTop_toBottomOf="@+id/temp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.23"
+            app:layout_constraintStart_toEndOf="@+id/day"
+            app:layout_constraintHorizontal_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

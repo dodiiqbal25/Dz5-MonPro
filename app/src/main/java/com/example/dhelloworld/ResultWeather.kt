@@ -119,7 +119,7 @@ data class WeatherItem(
 data class ListItem(
 
 	@field:SerializedName("dt")
-	val dt: Int? = null,
+	val dt: Long? = null,
 
 	@field:SerializedName("pop")
 	val pop: Double? = null,
